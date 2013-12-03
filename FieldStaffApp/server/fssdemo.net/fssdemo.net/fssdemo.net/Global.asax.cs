@@ -7,7 +7,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 
-namespace FieldStaffService
+namespace fssdemo.net
 {
     // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
     // visit http://go.microsoft.com/?LinkId=9394801
@@ -17,7 +17,6 @@ namespace FieldStaffService
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
-            System.Data.Entity.Database.SetInitializer<FieldStaffService.Models.LehrerContext>(null);
 
             WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
