@@ -1,0 +1,78 @@
+exec sp_addlinkedserver 'foto-bachmann.ch';
+exec sp_addlinkedsrvlogin 'foto-bachmann.ch', 'FALSE',NULL,'fotonet','rosaworld54';
+
+Delete from "foto-bachmann.ch".www985fot_fotonet.dbo.arbeiter; 
+Insert into "foto-bachmann.ch".www985fot_fotonet.dbo.arbeiter
+Select * from  foto.dbo.arbeiter;
+
+Delete from "foto-bachmann.ch".www985fot_fotonet.dbo.beziehung; 
+Insert into "foto-bachmann.ch".www985fot_fotonet.dbo.beziehung
+Select * from  foto.dbo.beziehung;
+
+Delete from "foto-bachmann.ch".www985fot_fotonet.dbo.ktermin; 
+Insert into "foto-bachmann.ch".www985fot_fotonet.dbo.ktermin
+Select * from  foto.dbo.ktermin;
+
+Delete from "foto-bachmann.ch".www985fot_fotonet.dbo.otermin; 
+Insert into "foto-bachmann.ch".www985fot_fotonet.dbo.otermin
+Select * from  foto.dbo.otermin;
+
+Delete from "foto-bachmann.ch".www985fot_fotonet.dbo.terminart; 
+Insert into "foto-bachmann.ch".www985fot_fotonet.dbo.terminart
+Select * from  foto.dbo.terminart;
+
+Delete from "foto-bachmann.ch".www985fot_fotonet.dbo.terminverwaltung; 
+Insert into "foto-bachmann.ch".www985fot_fotonet.dbo.terminverwaltung
+Select * from  foto.dbo.terminverwaltung;
+
+Meldung 15028, Ebene 16, Status 1, Prozedur sp_addlinkedserver, Zeile 82
+Der Server 'foto-bachmann.ch' ist bereits vorhanden.
+
+(66 Zeile(n) betroffen)
+
+(66 Zeile(n) betroffen)
+
+(10 Zeile(n) betroffen)
+
+(10 Zeile(n) betroffen)
+
+(32189 Zeile(n) betroffen)
+
+(32281 Zeile(n) betroffen)
+
+(65493 Zeile(n) betroffen)
+
+(65783 Zeile(n) betroffen)
+
+(4 Zeile(n) betroffen)
+
+(4 Zeile(n) betroffen)
+
+(97681 Zeile(n) betroffen)
+
+(98063 Zeile(n) betroffen)
+
+(4941 Zeile(n) betroffen)
+
+(4941 Zeile(n) betroffen)
+
+(9394 Zeile(n) betroffen)
+
+(9410 Zeile(n) betroffen)
+
+(61661 Zeile(n) betroffen)
+
+(61902 Zeile(n) betroffen)
+
+
+Delete from "foto-bachmann.ch".www985fot_fotonet.dbo.ort; 
+Insert into "foto-bachmann.ch".www985fot_fotonet.dbo.ort
+Select * from  foto.dbo.ort;
+
+Delete from "foto-bachmann.ch".www985fot_fotonet.dbo.organisation; 
+Insert into "foto-bachmann.ch".www985fot_fotonet.dbo.organisation
+Select * from  foto.dbo.organisation;
+
+Delete from "foto-bachmann.ch".www985fot_fotonet.dbo.kunde; 
+Insert into "foto-bachmann.ch".www985fot_fotonet.dbo.kunde
+Select * from  foto.dbo.kunde;

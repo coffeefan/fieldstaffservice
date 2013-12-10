@@ -1,4 +1,5 @@
-﻿using System.Web;
+﻿using FieldStaffService.Controllers;
+using System.Web;
 using System.Web.Mvc;
 
 namespace FieldStaffService
@@ -8,6 +9,7 @@ namespace FieldStaffService
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
             filters.Add(new HandleErrorAttribute());
+            
         }
     }
 }
